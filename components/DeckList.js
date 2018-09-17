@@ -50,7 +50,7 @@ class DeckList extends Component {
   }
 
   onDeckPress = ({ name }) => {
-    this.props.navigation.navigate('DeckDetails', { name })
+    //this.props.navigation.navigate('DeckDetails', { name })
   }
 
   render() {
@@ -69,13 +69,14 @@ class DeckList extends Component {
           {Object.keys(decks).map(deck => <Deck
             key={decks[deck].title}
             name={decks[deck].title}
-            count={decks[deck].questions.length}
+            count={decks[deck].subcategory.length}
             onDeckPress={this.onDeckPress} />)}
         </ScrollView>
       )
     }
   }
 }
+
 
 const styles = StyleSheet.create({
   deckContainer: {

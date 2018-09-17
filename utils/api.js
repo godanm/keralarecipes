@@ -33,11 +33,11 @@ export function addCardToDeck(title, card) {
 }
 
 const initialData = {
-  React: {
-    title: 'React',
-    questions: [
+  Category: {
+    title: 'Vegeterian',
+    subcategory: [
       {
-        question: 'React Native only supports Android development',
+        topic: 'Chicken',
         answer: false
       }
     ]
